@@ -61,6 +61,7 @@ pip install pillow
 python TM2字库转PNG.py <文件名>
 
 ## 6. PNG转TM2字库.py
+<b>功能介绍</b>
 
 将修改好的两个PNG字库图片打包成TM2双层字库文件，理论上适用于所有PS2平台的无双类游戏。
 
