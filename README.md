@@ -1,4 +1,6 @@
 # 使用说明
+<b>以下所有脚本于Python 3.14版本测试通过。</b>
+
 ## 1. 2kb-padding-tool.py
 <b>功能介绍</b>
 
@@ -76,5 +78,3 @@ PNG转TM2字库.py --template <原始导出的TM2文件> --layer-a <图层A.png>
 对游戏使用的LZP2格式压缩文件进行解包/打包。
 
 详见：https://github.com/lllljj1991/LZP2-tools/
-
-<b>以上所有脚本于Python 3.14版本测试通过。</b>
