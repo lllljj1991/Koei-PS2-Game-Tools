@@ -79,3 +79,46 @@ PNG转TM2字库.py --template <原始导出的TM2文件> --layer-a <图层A.png>
 对游戏使用的LZP2格式压缩文件进行解包/打包。
 
 详见：https://github.com/lllljj1991/LZP2-tools/
+
+## 8. LINKDATA解包工具
+
+<b>功能介绍</b>
+
+将游戏的LINKDATA.BIN根据其索引文件LINKDATA.IDX解包为若干个小文件。
+
+适用游戏：PS2平台三国无双3本传/猛将传、PS2平台三国无双4本传/猛将传、PC/Xbox360平台三国无双4特别版，其余游戏未测试，也许可用也许不行。
+
+<b>使用方式</b>
+
+python LINKDATA解包.py 输入文件夹/LINKDATA.BIN 输出文件夹
+
+## 9. LINKDATA重组工具
+
+<b>功能介绍</b>
+
+将解包后的小文件重组为文件包BIN及对应的索引文件IDX。
+
+<b>使用方式</b>
+
+python LINKDATA重组.py -353|-354|-354s360 输入文件夹 输出文件基名
+
+<b>注：</b>
+
+<ol>
+
+<li>其中-353代表IDX为PS2平台三国无双3本传/猛将传版本，-354代表IDX为PC平台三国无双4特别版、PS2平台三国无双4本传/猛将传版本，-354s360代表IDX为Xbox360平台三国无双4特别版版本。</li>
+
+<li>输出文件基名指除去扩展名部分的名称。
+
+<b>例：</b>
+
+<ol>
+
+<li>输入LINKDATA则输出目录为小文件所在目录，输出为LINKDATA.BIN和LINKDATA.IDX</li>
+
+<li>输入"C:\354\LINKDAT2"则输出目录为C:\354\，输出文件名为LINKDAT2.BIN和LINKDAT2.IDX</li>
+
+</li>
+</ol>
+
+</ol>
